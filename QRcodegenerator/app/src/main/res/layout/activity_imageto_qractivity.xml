@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TexttoQRActivity"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Image_ToQR_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:logo="@drawable/splash_img"
+        android:paddingStart="30dp"
+        app:titleTextColor="@color/black"
+        app:subtitleTextColor="@color/black"
+        app:title="zenQR"
+        app:titleMarginStart="10dp"
+        app:titleTextAppearance="@style/ToolbarStyle"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/eagle_horizon_font"
+                android:text="Image to QR Converter"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/uploadImageButton_ImageToQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:background="@drawable/button_background"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"/>
+
+            <ImageView
+                android:id="@+id/ImageView_ImageToQR"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                android:background="@android:color/darker_gray"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_marginHorizontal="20dp"/>
+
+            <Button
+                android:id="@+id/Convert_ImageToQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Convert"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewQR_ImageToQR"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"/>
+
+            <Button
+                android:id="@+id/Share_Button_ImagetoQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Share"
+                android:visibility="invisible"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

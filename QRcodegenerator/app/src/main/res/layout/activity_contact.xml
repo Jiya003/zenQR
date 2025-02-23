@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ContactActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Text_ToQR_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:logo="@drawable/splash_img"
+        android:paddingStart="30dp"
+        app:titleTextColor="@color/black"
+        app:subtitleTextColor="@color/black"
+        app:title="zenQR"
+        app:titleMarginStart="10dp"
+        app:titleTextAppearance="@style/ToolbarStyle"
+        />
+
+    <TextView
+        android:id="@+id/contactTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:fontFamily="@font/eagle_horizon_font"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/contactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📧 Email: divyanshimaurya611@gmail.com"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp"/>
+
+
+    <Button
+        android:id="@+id/contactEmailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="15dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Send Email"/>
+
+
+</LinearLayout>

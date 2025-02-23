@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".FeedBackActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Text_ToQR_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:logo="@drawable/splash_img"
+        android:paddingStart="30dp"
+        app:titleTextColor="@color/black"
+        app:subtitleTextColor="@color/black"
+        app:title="zenQR"
+        app:titleMarginStart="10dp"
+        app:titleTextAppearance="@style/ToolbarStyle"
+        />
+
+    <TextView
+        android:id="@+id/feedbackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We value your feedback!"
+        android:textSize="20sp"
+        android:fontFamily="@font/eagle_horizon_font"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/feedbackInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your feedback here..."
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:textStyle="normal"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/submitFeedbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Submit Feedback"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
